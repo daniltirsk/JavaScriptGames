@@ -1,0 +1,153 @@
+.field td{
+ width: 40px;
+ height: 40px;
+ border: 1px solid #707070;
+ background-color: #17E9E0;
+ border-radius: 2px;
+ text-align: center;
+}
+
+body{
+	background-color: #FFFFFF;
+	font: normal normal bold 20px/24px Roboto;
+	color: #707070;
+}
+
+table{
+	border-spacing: 4px;
+	margin: 0 auto;
+}
+
+td.openCell {
+	background-color: white;
+}
+
+td.bomb, .bomb{
+	background-color: #FC4445;
+	box-sizing: border-box;
+}
+
+td img{
+	padding-top: 2px;
+	pointer-events: none;
+}
+
+td.flagged{
+	background-color: white;
+}
+
+td.activeCell{
+	box-shadow: 0px 0px 0px 2px #FC4445;
+}
+
+.appContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.mainColumn{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.instructionContainer{
+	border: 2px solid #707070;
+	border-radius: 2px;
+	margin-left: 20px;
+	padding:10px;
+	width: 300px;
+	height: 270px;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	justify-content: space-around;
+}
+
+.statusBarContainer{
+	border: 2px solid #707070;
+	background-color: white;
+	border-radius: 2px;
+	padding: 2px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 600px;
+	height: 50px;
+}
+
+.bombCounterContainer{
+	background-color: #FC4445;
+	color: white;
+	padding-left: 10px;
+}
+
+.flagCounterContainer{
+	border: 2px solid #707070;
+	padding-left: 10px;
+}
+
+.resetButtonContainer{
+	border: 2px solid #707070;
+}
+
+.timeContainer {
+	border: 2px solid #707070;
+}
+
+.statusBarContainer > *{
+    border-radius: 4px;
+	display: flex;
+	padding-left: 5px;
+	padding-right: 5px;
+	align-items: center;
+	margin: 4px;
+}
+
+.timeContainer img{
+	width: 30px;
+	margin-right: 2px;
+}
+
+.resetButtonContainer img{
+	width: 30px;
+}
+
+.resetButtonContainer img:hover{
+	cursor: pointer;
+}
+
+.settingsContainer{
+	border: 2px solid #707070;
+	height: 200px;
+	width: 85px;
+	background-color: white;
+	border-radius: 2px;
+	padding: 2px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-right: 20px;
+}
+
+.submitBtn:active{
+	color: white;
+	background-color: #FC4445;
+}
+
+.settingsContainer label{
+	display: flex;
+	flex-direction: column;
+}
+
+.submitBtn{
+	display: block;
+	border: 2px solid black;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+}
